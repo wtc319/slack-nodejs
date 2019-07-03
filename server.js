@@ -11,6 +11,7 @@ const express_app = express();
 
 express_app.get('/', function(req, res) {
     console.log('"/" should not be accessed');
+    res.status(200).send('"/" should not be accessed');
     // res.status(200).send('"/" should not be accessed, please check your program :)');
 }); 
 
